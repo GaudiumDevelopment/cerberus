@@ -1,0 +1,47 @@
+{
+  "object_definitions": [
+    {
+      "typeName": "testObject",
+      "relations": [
+        {
+          "name": "testRelationName1",
+          "objectTypes" : [
+            {
+              "objectType": "TYPE",
+              "name": "testName1"
+            },
+            {
+              "objectType": "RElATION",
+              "objectName": "objectName2",
+              "relationName": "relationName2"
+            },
+            {
+              "objectType": "PERMISSION",
+              "objectName": "permissionObjectName2",
+              "permissionName": "testPermissionName2"
+            }
+          ]
+        },{
+          "name": "testRelationName2",
+          "allowed_types" : [ {
+            "objectType": "objectName",
+            "name": "test"
+          }]
+        }
+      ],
+      "permissions": [
+        {
+          "name": "testPermName1",
+          "content": {
+            "operationType": "UNION",
+            "relations": ["testRelationName1", {
+              "operationType": "INTERSECT",
+              "content": ["testRelationName1", "testRelationName2"]
+            }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
