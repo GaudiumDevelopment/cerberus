@@ -24,10 +24,6 @@ public class ObjectRelationTuple {
     
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder();
-        sb.append(relationType);
-        sb.append(SEPARATOR);
-        sb.append(relationName);
-        return sb.toString();
+        return relationType + SEPARATOR + relationName;
     }
 }
