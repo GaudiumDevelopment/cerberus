@@ -1,10 +1,10 @@
-# cerberus Project
+# Cerberus Project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Quarkus application based off of zanzibar.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+# Packaging and running
 
-## Running the application in dev mode
+### Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
 
@@ -14,7 +14,7 @@ You can run your application in dev mode that enables live coding using:
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
 
-## Packaging and running the application
+### Packaging and running the application
 
 The application can be packaged using:
 
@@ -35,7 +35,7 @@ If you want to build an _über-jar_, execute the following command:
 
 The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
 
-## Creating a native executable
+### Creating a native executable
 
 You can create a native executable using:
 
@@ -53,15 +53,15 @@ You can then execute your native executable with: `./target/cerberus-1.0-SNAPSHO
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
 
-## Related Guides
+### Related Guides
 
 - RESTEasy Reactive ([guide](https://quarkus.io/guides/resteasy-reactive)): Reactive implementation of JAX-RS with
   additional features. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions
   that depend on it.
 
-## Provided Code
+### Provided Code
 
-### RESTEasy Reactive
+#### RESTEasy Reactive
 
 Easily start your Reactive RESTful Web Services
 
