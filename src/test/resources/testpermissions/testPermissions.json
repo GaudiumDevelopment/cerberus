@@ -8,7 +8,7 @@
           "objectTypes" : [
             {
               "objectType": "TYPE",
-              "name": "testName1"
+              "objectName": "testName1"
             },
             {
               "objectType": "RElATION",
@@ -23,9 +23,9 @@
           ]
         },{
           "name": "testRelationName2",
-          "allowed_types" : [ {
-            "objectType": "objectName",
-            "name": "test"
+          "objectTypes" : [ {
+            "objectType": "TYPE",
+            "objectName": "test"
           }]
         }
       ],
@@ -34,7 +34,14 @@
           "name": "testPermName1",
           "content": {
             "operationType": "UNION",
-            "relations": ["testRelationName1", {
+            "relations": [{
+              "contentType": "RELATION",
+              "relationName": "relationName1"
+            },{
+              "contentType": "PERMISSION",
+              "permissionName": "testPermName"
+            }, {
+              "contentType": "OPERATION",
               "operationType": "INTERSECT",
               "content": ["testRelationName1", "testRelationName2"]
             }
